@@ -1,0 +1,198 @@
+\hypertarget{classmovie_1_1_movie_data_base}{\section{movie.\+Movie\+Data\+Base Class Reference}
+\label{classmovie_1_1_movie_data_base}\index{movie.\+Movie\+Data\+Base@{movie.\+Movie\+Data\+Base}}
+}
+Inheritance diagram for movie.\+Movie\+Data\+Base\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classmovie_1_1_movie_data_base}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{classmovie_1_1_movie_data_base_a35218c1a7743272e9a5780883ef31f8b}{get\+Row\+Count} ()
+\item 
+int \hyperlink{classmovie_1_1_movie_data_base_a2fa30de5e9bffd889c62617df9716b11}{get\+Column\+Count} ()
+\item 
+Object \hyperlink{classmovie_1_1_movie_data_base_a6f7ccc69b424c217cbeda6178495175c}{get\+Value\+At} (int row\+Index, int column\+Index)
+\item 
+String \hyperlink{classmovie_1_1_movie_data_base_a83038799f558bd8682bc531bcb9c8d95}{get\+Column\+Name} (int index)
+\item 
+Class$<$?$>$ \hyperlink{classmovie_1_1_movie_data_base_abf570a9f4b3f9c25a3977967f5b4c8d5}{get\+Column\+Class} (int index)
+\item 
+boolean \hyperlink{classmovie_1_1_movie_data_base_adec405f1fab1154a0d9064f877336f66}{is\+Cell\+Editable} (int row, int column)
+\item 
+void \hyperlink{classmovie_1_1_movie_data_base_a1b56aa6f04407b25b20991bfa0b55c8a}{set\+Value\+At} (Object value, int row, int column)
+\item 
+void \hyperlink{classmovie_1_1_movie_data_base_a05eb229b577536a71dd4831b9122cbe3}{add\+Movie} (\hyperlink{classmovie_1_1_movie}{Movie} m)
+\item 
+void \hyperlink{classmovie_1_1_movie_data_base_a48917199cfa02b6d8a26facdf77a22ee}{delete} ()
+\item 
+void \hyperlink{classmovie_1_1_movie_data_base_ae61245563faad4751e6a8fd1d6c9c780}{delete} (String option, String thing)
+\item 
+void \hyperlink{classmovie_1_1_movie_data_base_a4b04593497847c01cbd40c8a94af15b0}{search\+If} (String option, String thing)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Ez az osztály alkotja az adatbázist. Itt vannak eltárolva a filmek adatai és a hozzájuk kapcsolódó metódusok is ebben az osztályban vannak definiálva. Az osztály megvalósítja az Abstract\+Table\+Model interfészt, hogy a táblázat át tudja venni az adatokat. 
+
+\subsection{Member Function Documentation}
+\hypertarget{classmovie_1_1_movie_data_base_a05eb229b577536a71dd4831b9122cbe3}{\index{movie\+::\+Movie\+Data\+Base@{movie\+::\+Movie\+Data\+Base}!add\+Movie@{add\+Movie}}
+\index{add\+Movie@{add\+Movie}!movie\+::\+Movie\+Data\+Base@{movie\+::\+Movie\+Data\+Base}}
+\subsubsection[{add\+Movie}]{\setlength{\rightskip}{0pt plus 5cm}void movie.\+Movie\+Data\+Base.\+add\+Movie (
+\begin{DoxyParamCaption}
+\item[{{\bf Movie}}]{m}
+\end{DoxyParamCaption}
+)}}\label{classmovie_1_1_movie_data_base_a05eb229b577536a71dd4831b9122cbe3}
+egy film hozzáadása az adatbázishoz. ha már benne van az adatbázisban, nem adjuk hozzá 
+\begin{DoxyParams}{Parameters}
+{\em m} & -\/ az adatbázishoz hozzáadandó film \\
+\hline
+\end{DoxyParams}
+\hypertarget{classmovie_1_1_movie_data_base_a48917199cfa02b6d8a26facdf77a22ee}{\index{movie\+::\+Movie\+Data\+Base@{movie\+::\+Movie\+Data\+Base}!delete@{delete}}
+\index{delete@{delete}!movie\+::\+Movie\+Data\+Base@{movie\+::\+Movie\+Data\+Base}}
+\subsubsection[{delete}]{\setlength{\rightskip}{0pt plus 5cm}void movie.\+Movie\+Data\+Base.\+delete (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classmovie_1_1_movie_data_base_a48917199cfa02b6d8a26facdf77a22ee}
+a kijelölt filmek törlése az adatbázisból \hypertarget{classmovie_1_1_movie_data_base_ae61245563faad4751e6a8fd1d6c9c780}{\index{movie\+::\+Movie\+Data\+Base@{movie\+::\+Movie\+Data\+Base}!delete@{delete}}
+\index{delete@{delete}!movie\+::\+Movie\+Data\+Base@{movie\+::\+Movie\+Data\+Base}}
+\subsubsection[{delete}]{\setlength{\rightskip}{0pt plus 5cm}void movie.\+Movie\+Data\+Base.\+delete (
+\begin{DoxyParamCaption}
+\item[{String}]{option, }
+\item[{String}]{thing}
+\end{DoxyParamCaption}
+)}}\label{classmovie_1_1_movie_data_base_ae61245563faad4751e6a8fd1d6c9c780}
+adott tulajdonsággal rendelkezõ filmek törlése az adatbázisból 
+\begin{DoxyParams}{Parameters}
+{\em option} & -\/ szempont, ami alapján törölni akarunk filmeket \\
+\hline
+{\em thing} & -\/ ha az adott attribútuma a filmnek egyezik ezzel a sztringgel, vagy integerrel, akkor töröljük \\
+\hline
+\end{DoxyParams}
+\hypertarget{classmovie_1_1_movie_data_base_abf570a9f4b3f9c25a3977967f5b4c8d5}{\index{movie\+::\+Movie\+Data\+Base@{movie\+::\+Movie\+Data\+Base}!get\+Column\+Class@{get\+Column\+Class}}
+\index{get\+Column\+Class@{get\+Column\+Class}!movie\+::\+Movie\+Data\+Base@{movie\+::\+Movie\+Data\+Base}}
+\subsubsection[{get\+Column\+Class}]{\setlength{\rightskip}{0pt plus 5cm}Class$<$?$>$ movie.\+Movie\+Data\+Base.\+get\+Column\+Class (
+\begin{DoxyParamCaption}
+\item[{int}]{index}
+\end{DoxyParamCaption}
+)}}\label{classmovie_1_1_movie_data_base_abf570a9f4b3f9c25a3977967f5b4c8d5}
+az adatok megjelenítése a megfelelõ formátumban 
+\begin{DoxyParams}{Parameters}
+{\em index} & -\/ oszlopindex \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+-\/ a megfelelõ típus 
+\end{DoxyReturn}
+\hypertarget{classmovie_1_1_movie_data_base_a2fa30de5e9bffd889c62617df9716b11}{\index{movie\+::\+Movie\+Data\+Base@{movie\+::\+Movie\+Data\+Base}!get\+Column\+Count@{get\+Column\+Count}}
+\index{get\+Column\+Count@{get\+Column\+Count}!movie\+::\+Movie\+Data\+Base@{movie\+::\+Movie\+Data\+Base}}
+\subsubsection[{get\+Column\+Count}]{\setlength{\rightskip}{0pt plus 5cm}int movie.\+Movie\+Data\+Base.\+get\+Column\+Count (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classmovie_1_1_movie_data_base_a2fa30de5e9bffd889c62617df9716b11}
+a táblázathoz szükséges oszlopok száma \begin{DoxyReturn}{Returns}
+-\/ az oszlopok száma, itt\+: 6, mert 6 oszlopunk lesz 
+\end{DoxyReturn}
+\hypertarget{classmovie_1_1_movie_data_base_a83038799f558bd8682bc531bcb9c8d95}{\index{movie\+::\+Movie\+Data\+Base@{movie\+::\+Movie\+Data\+Base}!get\+Column\+Name@{get\+Column\+Name}}
+\index{get\+Column\+Name@{get\+Column\+Name}!movie\+::\+Movie\+Data\+Base@{movie\+::\+Movie\+Data\+Base}}
+\subsubsection[{get\+Column\+Name}]{\setlength{\rightskip}{0pt plus 5cm}String movie.\+Movie\+Data\+Base.\+get\+Column\+Name (
+\begin{DoxyParamCaption}
+\item[{int}]{index}
+\end{DoxyParamCaption}
+)}}\label{classmovie_1_1_movie_data_base_a83038799f558bd8682bc531bcb9c8d95}
+a fejlécek beállítása 
+\begin{DoxyParams}{Parameters}
+{\em index} & -\/ oszlopindex \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+-\/ a megfelelõ oszlop fejlécének neve 
+\end{DoxyReturn}
+\hypertarget{classmovie_1_1_movie_data_base_a35218c1a7743272e9a5780883ef31f8b}{\index{movie\+::\+Movie\+Data\+Base@{movie\+::\+Movie\+Data\+Base}!get\+Row\+Count@{get\+Row\+Count}}
+\index{get\+Row\+Count@{get\+Row\+Count}!movie\+::\+Movie\+Data\+Base@{movie\+::\+Movie\+Data\+Base}}
+\subsubsection[{get\+Row\+Count}]{\setlength{\rightskip}{0pt plus 5cm}int movie.\+Movie\+Data\+Base.\+get\+Row\+Count (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classmovie_1_1_movie_data_base_a35218c1a7743272e9a5780883ef31f8b}
+a táblázathoz szükséges sorok száma \begin{DoxyReturn}{Returns}
+-\/ sorok száma 
+\end{DoxyReturn}
+\hypertarget{classmovie_1_1_movie_data_base_a6f7ccc69b424c217cbeda6178495175c}{\index{movie\+::\+Movie\+Data\+Base@{movie\+::\+Movie\+Data\+Base}!get\+Value\+At@{get\+Value\+At}}
+\index{get\+Value\+At@{get\+Value\+At}!movie\+::\+Movie\+Data\+Base@{movie\+::\+Movie\+Data\+Base}}
+\subsubsection[{get\+Value\+At}]{\setlength{\rightskip}{0pt plus 5cm}Object movie.\+Movie\+Data\+Base.\+get\+Value\+At (
+\begin{DoxyParamCaption}
+\item[{int}]{row\+Index, }
+\item[{int}]{column\+Index}
+\end{DoxyParamCaption}
+)}}\label{classmovie_1_1_movie_data_base_a6f7ccc69b424c217cbeda6178495175c}
+a táblázat celláinak értékei 
+\begin{DoxyParams}{Parameters}
+{\em row\+Index} & -\/ sorindex \\
+\hline
+{\em column\+Index} & -\/ oszlopindex \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+-\/ az adott cella megfelelõ tartalma 
+\end{DoxyReturn}
+\hypertarget{classmovie_1_1_movie_data_base_adec405f1fab1154a0d9064f877336f66}{\index{movie\+::\+Movie\+Data\+Base@{movie\+::\+Movie\+Data\+Base}!is\+Cell\+Editable@{is\+Cell\+Editable}}
+\index{is\+Cell\+Editable@{is\+Cell\+Editable}!movie\+::\+Movie\+Data\+Base@{movie\+::\+Movie\+Data\+Base}}
+\subsubsection[{is\+Cell\+Editable}]{\setlength{\rightskip}{0pt plus 5cm}boolean movie.\+Movie\+Data\+Base.\+is\+Cell\+Editable (
+\begin{DoxyParamCaption}
+\item[{int}]{row, }
+\item[{int}]{column}
+\end{DoxyParamCaption}
+)}}\label{classmovie_1_1_movie_data_base_adec405f1fab1154a0d9064f877336f66}
+az utolsó (kiválasztás) cellát szerkeszthetõvé tesszük 
+\begin{DoxyParams}{Parameters}
+{\em row} & -\/ sorindex (nincs rás szükség) \\
+\hline
+{\em column} & -\/ oszlopindex \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+-\/ szerkesztheõ-\/e vagy nem 
+\end{DoxyReturn}
+\hypertarget{classmovie_1_1_movie_data_base_a4b04593497847c01cbd40c8a94af15b0}{\index{movie\+::\+Movie\+Data\+Base@{movie\+::\+Movie\+Data\+Base}!search\+If@{search\+If}}
+\index{search\+If@{search\+If}!movie\+::\+Movie\+Data\+Base@{movie\+::\+Movie\+Data\+Base}}
+\subsubsection[{search\+If}]{\setlength{\rightskip}{0pt plus 5cm}void movie.\+Movie\+Data\+Base.\+search\+If (
+\begin{DoxyParamCaption}
+\item[{String}]{option, }
+\item[{String}]{thing}
+\end{DoxyParamCaption}
+)}}\label{classmovie_1_1_movie_data_base_a4b04593497847c01cbd40c8a94af15b0}
+adott tulajdonsággal rendelkezõ filmek keresése 
+\begin{DoxyParams}{Parameters}
+{\em option} & -\/ szempont, ami alapján keresünk \\
+\hline
+{\em thing} & -\/ ha az adott attribútuma a filmnek egyezik ezzel a sztringgel, vagy integerrel, akkor a found attribútumát truera állítjuk \\
+\hline
+\end{DoxyParams}
+\hypertarget{classmovie_1_1_movie_data_base_a1b56aa6f04407b25b20991bfa0b55c8a}{\index{movie\+::\+Movie\+Data\+Base@{movie\+::\+Movie\+Data\+Base}!set\+Value\+At@{set\+Value\+At}}
+\index{set\+Value\+At@{set\+Value\+At}!movie\+::\+Movie\+Data\+Base@{movie\+::\+Movie\+Data\+Base}}
+\subsubsection[{set\+Value\+At}]{\setlength{\rightskip}{0pt plus 5cm}void movie.\+Movie\+Data\+Base.\+set\+Value\+At (
+\begin{DoxyParamCaption}
+\item[{Object}]{value, }
+\item[{int}]{row, }
+\item[{int}]{column}
+\end{DoxyParamCaption}
+)}}\label{classmovie_1_1_movie_data_base_a1b56aa6f04407b25b20991bfa0b55c8a}
+az átállított elemet elmentjük a listában 
+\begin{DoxyParams}{Parameters}
+{\em value} & -\/ az érték amire átállítjuk \\
+\hline
+{\em row} & -\/ sorindex \\
+\hline
+{\em column} & -\/ oszlopindex \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Movie\+Data\+Base.\+java\end{DoxyCompactItemize}

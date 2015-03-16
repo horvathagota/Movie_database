@@ -1,0 +1,126 @@
+\hypertarget{classmovie_1_1_movie}{\section{movie.\+Movie Class Reference}
+\label{classmovie_1_1_movie}\index{movie.\+Movie@{movie.\+Movie}}
+}
+Inheritance diagram for movie.\+Movie\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classmovie_1_1_movie}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classmovie_1_1_movie_a15bc1b3b3cefe583fbf221c46d905f3c}{{\bfseries Movie} (String title, String director, String premier, int length)}\label{classmovie_1_1_movie_a15bc1b3b3cefe583fbf221c46d905f3c}
+
+\item 
+String \hyperlink{classmovie_1_1_movie_a66c229e225f28090330e60d84ba3dc4a}{get\+Title} ()
+\item 
+int \hyperlink{classmovie_1_1_movie_a6cd818653c32498f1591f1f079fb0d0f}{get\+Length} ()
+\item 
+String \hyperlink{classmovie_1_1_movie_a0739ed120451a8bd3056620daba4c835}{get\+Premier} ()
+\item 
+String \hyperlink{classmovie_1_1_movie_afba9adf7eb86afd41c1db118fad5dbc9}{get\+Director} ()
+\item 
+boolean \hyperlink{classmovie_1_1_movie_a510c92052800fcf24d4951e85327bdb2}{is\+Marked} ()
+\item 
+void \hyperlink{classmovie_1_1_movie_a377992d8564030d8290c857973c9ba48}{set\+Marked} (boolean value)
+\item 
+boolean \hyperlink{classmovie_1_1_movie_a6b308eb2b1a64136b4127a1739129d81}{is\+Found} ()
+\item 
+void \hyperlink{classmovie_1_1_movie_ab58c507829f42de41b2540bb071333d8}{set\+Found} (boolean value)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Ez az osztály tárolja egy film adatait. Megvalósítja a Serializable interfészt, hogy ki lehessen menteni fájlba az adatbázihoz hozzáadott filmeket. 
+
+\subsection{Member Function Documentation}
+\hypertarget{classmovie_1_1_movie_afba9adf7eb86afd41c1db118fad5dbc9}{\index{movie\+::\+Movie@{movie\+::\+Movie}!get\+Director@{get\+Director}}
+\index{get\+Director@{get\+Director}!movie\+::\+Movie@{movie\+::\+Movie}}
+\subsubsection[{get\+Director}]{\setlength{\rightskip}{0pt plus 5cm}String movie.\+Movie.\+get\+Director (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classmovie_1_1_movie_afba9adf7eb86afd41c1db118fad5dbc9}
+a film rendezõjének lekérdezése \begin{DoxyReturn}{Returns}
+-\/ a film rendezõje 
+\end{DoxyReturn}
+\hypertarget{classmovie_1_1_movie_a6cd818653c32498f1591f1f079fb0d0f}{\index{movie\+::\+Movie@{movie\+::\+Movie}!get\+Length@{get\+Length}}
+\index{get\+Length@{get\+Length}!movie\+::\+Movie@{movie\+::\+Movie}}
+\subsubsection[{get\+Length}]{\setlength{\rightskip}{0pt plus 5cm}int movie.\+Movie.\+get\+Length (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classmovie_1_1_movie_a6cd818653c32498f1591f1f079fb0d0f}
+a film hosszának lekérdezése \begin{DoxyReturn}{Returns}
+-\/ a film hossza percekben 
+\end{DoxyReturn}
+\hypertarget{classmovie_1_1_movie_a0739ed120451a8bd3056620daba4c835}{\index{movie\+::\+Movie@{movie\+::\+Movie}!get\+Premier@{get\+Premier}}
+\index{get\+Premier@{get\+Premier}!movie\+::\+Movie@{movie\+::\+Movie}}
+\subsubsection[{get\+Premier}]{\setlength{\rightskip}{0pt plus 5cm}String movie.\+Movie.\+get\+Premier (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classmovie_1_1_movie_a0739ed120451a8bd3056620daba4c835}
+a film premierének lekérdezése \begin{DoxyReturn}{Returns}
+-\/ a film premierének dátuma 
+\end{DoxyReturn}
+\hypertarget{classmovie_1_1_movie_a66c229e225f28090330e60d84ba3dc4a}{\index{movie\+::\+Movie@{movie\+::\+Movie}!get\+Title@{get\+Title}}
+\index{get\+Title@{get\+Title}!movie\+::\+Movie@{movie\+::\+Movie}}
+\subsubsection[{get\+Title}]{\setlength{\rightskip}{0pt plus 5cm}String movie.\+Movie.\+get\+Title (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classmovie_1_1_movie_a66c229e225f28090330e60d84ba3dc4a}
+a film címének lekérdezése \begin{DoxyReturn}{Returns}
+-\/ a film címe 
+\end{DoxyReturn}
+\hypertarget{classmovie_1_1_movie_a6b308eb2b1a64136b4127a1739129d81}{\index{movie\+::\+Movie@{movie\+::\+Movie}!is\+Found@{is\+Found}}
+\index{is\+Found@{is\+Found}!movie\+::\+Movie@{movie\+::\+Movie}}
+\subsubsection[{is\+Found}]{\setlength{\rightskip}{0pt plus 5cm}boolean movie.\+Movie.\+is\+Found (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classmovie_1_1_movie_a6b308eb2b1a64136b4127a1739129d81}
+a found értékének lekérdezése \begin{DoxyReturn}{Returns}
+-\/ true, ha megfelel a keresési feltételeknek, false, ha nem 
+\end{DoxyReturn}
+\hypertarget{classmovie_1_1_movie_a510c92052800fcf24d4951e85327bdb2}{\index{movie\+::\+Movie@{movie\+::\+Movie}!is\+Marked@{is\+Marked}}
+\index{is\+Marked@{is\+Marked}!movie\+::\+Movie@{movie\+::\+Movie}}
+\subsubsection[{is\+Marked}]{\setlength{\rightskip}{0pt plus 5cm}boolean movie.\+Movie.\+is\+Marked (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classmovie_1_1_movie_a510c92052800fcf24d4951e85327bdb2}
+annak lekérdezése, hogy ki van-\/e jelölve az adott film \begin{DoxyReturn}{Returns}
+-\/ true, ha ki van jelölve, false, ha nincs 
+\end{DoxyReturn}
+\hypertarget{classmovie_1_1_movie_ab58c507829f42de41b2540bb071333d8}{\index{movie\+::\+Movie@{movie\+::\+Movie}!set\+Found@{set\+Found}}
+\index{set\+Found@{set\+Found}!movie\+::\+Movie@{movie\+::\+Movie}}
+\subsubsection[{set\+Found}]{\setlength{\rightskip}{0pt plus 5cm}void movie.\+Movie.\+set\+Found (
+\begin{DoxyParamCaption}
+\item[{boolean}]{value}
+\end{DoxyParamCaption}
+)}}\label{classmovie_1_1_movie_ab58c507829f42de41b2540bb071333d8}
+a found beállítása 
+\begin{DoxyParams}{Parameters}
+{\em value} & -\/ az érték, amire beállítjuk \\
+\hline
+\end{DoxyParams}
+\hypertarget{classmovie_1_1_movie_a377992d8564030d8290c857973c9ba48}{\index{movie\+::\+Movie@{movie\+::\+Movie}!set\+Marked@{set\+Marked}}
+\index{set\+Marked@{set\+Marked}!movie\+::\+Movie@{movie\+::\+Movie}}
+\subsubsection[{set\+Marked}]{\setlength{\rightskip}{0pt plus 5cm}void movie.\+Movie.\+set\+Marked (
+\begin{DoxyParamCaption}
+\item[{boolean}]{value}
+\end{DoxyParamCaption}
+)}}\label{classmovie_1_1_movie_a377992d8564030d8290c857973c9ba48}
+a kijelölés beállítása 
+\begin{DoxyParams}{Parameters}
+{\em value} & -\/ true vagy false, amire állítani szeretnénk a marked értékét \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Movie.\+java\end{DoxyCompactItemize}
